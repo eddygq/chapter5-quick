@@ -1,0 +1,23 @@
+
+task main()
+{
+
+	repeat(forever)
+	{
+
+		if (SensorValue[touch1] == 1)
+		{
+			motor[motorA] = 50;
+			motor[motorB] = 0;
+			} else {
+			if (SensorValue[touch2] == 1)
+			{
+				motor[motorA] = 0;
+				motor[motorB] = 50;
+				} else {
+				motor[motorA] = 0;
+				motor[motorB] = 0;
+			}
+		}
+	}
+}
