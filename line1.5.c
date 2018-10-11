@@ -136,4 +136,5 @@ task main()
 	}
 	motor[motorA] = 0;
 	motor[motorD] = 0;
+	sleep(1000);
 }
